@@ -68,6 +68,11 @@ return [
             'bucket' => env('AWS_BUCKET'),
             'url' => env('AWS_URL'),
         ],
+        'api' => [
+            'driver' => 'local',
+            'root' => base_path(). DIRECTORY_SEPARATOR .'api',
+            'visibility' => 'public',
+        ]
 
     ],
 
